@@ -1,3 +1,4 @@
+
 ############## Numpy array:
 how to import numpy library                                                             import numpy as np	        						
 how to create 1D numpy array                                                            x=np.array([1,2,3])	        						
