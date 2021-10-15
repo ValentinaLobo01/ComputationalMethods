@@ -1,0 +1,54 @@
+############## Numpy array:
+how to import numpy library                                                             import numpy as np	        						
+how to create 1D numpy array                                                            x=np.array([1,2,3])	        						
+how to create 2D numpy array                                                            x=np.array([[1,2,3],[4,5,6]])   						
+
+############# Plotting
+Plotting:
+make a plot of a s sinusoid with a range from -pi to pi					x=np.linspace(-np.pi,np.pi,100)
+											y=np.sin(x)
+											fig, axis = plt.subplots(1,1)
+											axis.scatter(x,y)
+											axis.plot(x,y)
+############## Random numbers
+Explain the operations:
+x=np.random.randint(1,100,10)                                                           how to generate 10 random integers from the range 1-100 			 
+A=np.random.rand(10,10)                                                                 how to generate a 10x10 matrix with random uniform numbers			    
+x=np.linspace(0,np.pi,100)                                                              how to generate a numpy array from 0 to np.pi with 100 evenly spaced elements	    
+x=np.arange(10) 	                                                                how to generate ordered integers from 0 to 10					    
+x=np.random.uniform(2,5)                                                                how to generate single random number from the uniform distribution between 2 and 5  
+x=np.random.uniform(2,5,100)                                                            how to generate 100 random numbers from the uniform distribution between 2 and 5    
+x=np.random.normal(mu,sigma,1000)                                                       how to generate 100 random numbers from the normal distribution, given mu and sigma 
+
+
+############## INTERPOLATION
+what are the methods of interpolation							spline, hermite, Lagrange polynomial
+how does spline work									piecewice interpolation for each pair (line or curve)... etc
+
+############## DIFFERENTIATION 
+what is the geometrical interpretation of derivative					slope
+scipy.misc.derivative uses forward, backward or central derivative?			central difference (error is smaller)
+
+############### INTEGRATION
+what is the geometrical interpretation of integration (simplified)			area under the curve
+what are two most commond methods (schemes) for the numerical integration		trapezoid, Simpson
+when do we use scipy.quad and when np.trapz						first if we know the function, second if we know the data points
+how can we estimate numerical integral using Monte Carlo Method				acceptance-rejection, mean value method
+what are the advantages and disadvantages of Monte Carlo Method				slower and less precise for simple integrals (quad is better)
+											but can be useful for highdimensional complex integrals
+
+############### Differential equations
+how does Euler method works:								estimates next point from the previous point and derivate at this point
+how does Runge-Kutta works								similar to Euler method but the derivative is calculated with weighted functions
+whats the difference between scipy.solve_ivp and scipy.solve_bvp			first solves Initial value problem, second boundary value problem 
+
+############### Linear algebra
+whats the difference between matrix and array						first one is 2D numbers second can be any dimension any values
+What is the difference between M*M and M@M multiplication				first is element by element second is matrix multipliction (row x col)
+how deoes LU decomposition work								it decomposes matrix by upper and lower matrix and solution can be obtain by substitution			
+how can one calculate matrix to the power of 1000 more efficiently			using diagonalization method
+
+############### Fitting
+what does it mean least-squares method and how it works					algorithm that minimizes sum of the squares of the residuals
+what is the difference between interpolation and fitting				interpolation finds points between pair of two known points 
+											fitting finds a function that fits all the points at once
