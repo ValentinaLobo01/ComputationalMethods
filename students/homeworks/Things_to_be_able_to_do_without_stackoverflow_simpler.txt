@@ -1,9 +1,15 @@
 ############## Numpy array:
-Explain the operations:
-import numpy as np	      								how to import numpy library							      
-x=np.array([1,2,3])	      								how to create 1D numpy array							      
-x=np.array([[1,2,3],[4,5,6]]) 								how to create 2D numpy array							      
+how to import numpy library                                                             import numpy as np	        						
+how to create 1D numpy array                                                            x=np.array([1,2,3])	        						
+how to create 2D numpy array                                                            x=np.array([[1,2,3],[4,5,6]])   						
 
+############# Plotting
+Plotting:
+make a plot of a s sinusoid with a range from -pi to pi					x=np.linspace(-np.pi,np.pi,100)
+											y=np.sin(x)
+											fig, axis = plt.subplots(1,1)
+											axis.scatter(x,y)
+											axis.plot(x,y)
 ############## Random numbers
 Explain the operations:
 x=np.random.randint(1,100,10)                                                           how to generate 10 random integers from the range 1-100 			 
@@ -15,14 +21,6 @@ x=np.random.uniform(2,5,100)                                                    
 x=np.random.normal(mu,sigma,1000)                                                       how to generate 100 random numbers from the normal distribution, given mu and sigma 
 
 
-############# Plotting
-Plotting:
-how to import plotting library								import matplotlib.pyplot as plt
-how to plot sinusoid with a range from -pi to pi					x=np.linspace(-np.pi,np.pi,100)
-											y=np.sin(x)
-											fig, axis = plt.subplots(1,1)
-											axis.scatter(x,y)
-											axis.plot(x,y)
 ############## INTERPOLATION
 what are the methods of interpolation							spline, hermite, Lagrange polynomial
 how does spline work									piecewice interpolation for each pair (line or curve)... etc
