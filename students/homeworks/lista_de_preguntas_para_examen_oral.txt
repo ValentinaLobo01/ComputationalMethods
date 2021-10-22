@@ -51,7 +51,7 @@ Explain the operations:
 22. whats the difference between matrix and array				
 23. What is the difference between M*M and M@M multiplication			
 24. how deoes LU decomposition work						  
-25. how can one calculate matrix to the power of 1000 more efficiently		
+25. how can one calculate matrix to the power of 1000 most efficiently		
 
 ############### Fitting
 26. what does it mean least-squares method and how it works			
