@@ -41,35 +41,35 @@ Explain the operations:
 ############### Differential equations
 19. how does Euler method works:							estimates next point from the previous point and derivate at this point
 20. how does Runge-Kutta works								similar to Euler method but the derivative is calculated with weighted functions
-whats the difference between scipy.solve_ivp and scipy.solve_bvp			first solves Initial value problem, second boundary value problem 
+21. whats the difference between scipy.solve_ivp and scipy.solve_bvp			first solves Initial value problem, second boundary value problem 
 
 ############### Linear algebra
-21. whats the difference between matrix and array					first one is 2D numbers second can be any dimension any values
-22. What is the difference between M*M and M@M multiplication				first is element by element second is matrix multipliction (row x col)
-23. how deoes LU decomposition work							it decomposes matrix by upper and lower matrix and solution can be obtain by backward/forward substitution			
-24. how can one calculate matrix to the power of 1000 more efficiently			using diagonalization method
+22. whats the difference between matrix and array					first one is 2D numbers second can be any dimension any values
+23. What is the difference between M*M and M@M multiplication				first is element by element second is matrix multipliction (row x col)
+24. how deoes LU decomposition work							it decomposes matrix by upper and lower matrix and solution can be obtain by backward/forward substitution			
+25. how can one calculate matrix to the power of 1000 more efficiently			using diagonalization method
 
 ############### Fitting
-25. what does it mean least-squares method and how it works				algorithm that minimizes sum of the squares of the residuals
-26. what is the difference between interpolation and fitting				interpolation finds points between pair of two known points 
+26. what does it mean least-squares method and how it works				algorithm that minimizes sum of the squares of the residuals
+27. what is the difference between interpolation and fitting				interpolation finds points between pair of two known points 
 											fitting finds a function that fits all the points at once
 ############### Additional questions
-27. let say A=np.array([1,2,3]), what is the difference between:			in the first case (shallow copy) if we modify A then B will also be modified, in the second case (deep copy) B will be independet from A from the moment of creation
+28. let say A=np.array([1,2,3]), what is the difference between:			in the first case (shallow copy) if we modify A then B will also be modified, in the second case (deep copy) B will be independet from A from the moment of creation
     B=A
     B=A.copy()
-28 what is the difference between numpy and scipy					numpy is "numerical python" particularmente util con general arrays
+229 what is the difference between numpy and scipy					numpy is "numerical python" particularmente util con general arrays
 											scipy is "scientific python" particularmente util para otro parte de matematica, calculus, equacione diferenciales
 											much bibliotecas existen en ambos: numpy/scipy por ejemplo np.sqrt() scipy.sqrt() etc...
-29. what is the purpose of sequence:
+30. what is the purpose of sequence:
     try:
     ...											Try to perform some operation (try:), but if any error happens then do (except:) 
     except:
     ...
-30. which method is faster to multiply matrices:					loop is always slower tha build-in functions. Build-in functions are optimized
+31. which method is faster to multiply matrices:					loop is always slower tha build-in functions. Build-in functions are optimized
 
-a) for i in range(n):							
-    for j in range(m):
-      for z in range(k):
-        product[i, j] += matrix1[i, z] * matrix2[z, j]
-	
-b) product = np.matmul(matrix1, matrix2)	
+    a) for i in range(n):				        	
+    	for j in range(m):
+    	  for z in range(k):
+    	    product[i, j] += matrix1[i, z] * matrix2[z, j]
+    	    
+    b) product = np.matmul(matrix1, matrix2)	    
