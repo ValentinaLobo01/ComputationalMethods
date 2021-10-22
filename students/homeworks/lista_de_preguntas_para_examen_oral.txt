@@ -31,32 +31,32 @@ Explain the operations:
 13. scipy.misc.derivative uses forward, backward or central derivative?			central difference (error is smaller)
 
 ############### INTEGRATION
-14 what is the geometrical interpretation of integration (simplified)			area under the curve
-what are two most commond methods (schemes) for the numerical integration		trapezoid, Simpson
-when do we use scipy.quad and when np.trapz						first if we know the function, second if we know the data points
-how can we estimate numerical integral using Monte Carlo Method				acceptance-rejection, mean value method
-what are the advantages and disadvantages of Monte Carlo Method				slower and less precise for simple integrals (quad is better)
+14. what is the geometrical interpretation of integration (simplified)			area under the curve
+15. what are two most commond methods (schemes) for the numerical integration		trapezoid, Simpson
+16. when do we use scipy.quad and when np.trapz						first if we know the function, second if we know the data points
+17. how can we estimate numerical integral using Monte Carlo Method				acceptance-rejection, mean value method
+18. what are the advantages and disadvantages of Monte Carlo Method				slower and less precise for simple integrals (quad is better)
 											but can be useful for highdimensional complex integrals
 
 ############### Differential equations
-how does Euler method works:								estimates next point from the previous point and derivate at this point
-how does Runge-Kutta works								similar to Euler method but the derivative is calculated with weighted functions
+19. how does Euler method works:								estimates next point from the previous point and derivate at this point
+20. how does Runge-Kutta works								similar to Euler method but the derivative is calculated with weighted functions
 whats the difference between scipy.solve_ivp and scipy.solve_bvp			first solves Initial value problem, second boundary value problem 
 
 ############### Linear algebra
-whats the difference between matrix and array						first one is 2D numbers second can be any dimension any values
-What is the difference between M*M and M@M multiplication				first is element by element second is matrix multipliction (row x col)
-how deoes LU decomposition work								it decomposes matrix by upper and lower matrix and solution can be obtain by backward/forward substitution			
-how can one calculate matrix to the power of 1000 more efficiently			using diagonalization method
+21. whats the difference between matrix and array						first one is 2D numbers second can be any dimension any values
+22. What is the difference between M*M and M@M multiplication				first is element by element second is matrix multipliction (row x col)
+23. how deoes LU decomposition work								it decomposes matrix by upper and lower matrix and solution can be obtain by backward/forward substitution			
+24. how can one calculate matrix to the power of 1000 more efficiently			using diagonalization method
 
 ############### Fitting
-what does it mean least-squares method and how it works					algorithm that minimizes sum of the squares of the residuals
-what is the difference between interpolation and fitting				interpolation finds points between pair of two known points 
+25. what does it mean least-squares method and how it works					algorithm that minimizes sum of the squares of the residuals
+26. what is the difference between interpolation and fitting				interpolation finds points between pair of two known points 
 											fitting finds a function that fits all the points at once
 ############### Additional questions
-let say A=np.array([1,2,3]), what is the difference between:				in the first case (shallow copy) if we modify A then B will also be modified, in the second case (deep copy) B will be independet from A from the moment of creation
+27. let say A=np.array([1,2,3]), what is the difference between:				in the first case (shallow copy) if we modify A then B will also be modified, in the second case (deep copy) B will be independet from A from the moment of creation
     B=A
     B=A.copy()
-what is the difference between numpy and scipy						numpy is "numerical python" particularmente util con general arrays
+28 what is the difference between numpy and scipy						numpy is "numerical python" particularmente util con general arrays
 											scipy is "scientific python" particularmente util para otro parte de matematica, calculus, equacione diferenciales
 											much bibliotecas existen en ambos: numpy/scipy por ejemplo np.sqrt() scipy.sqrt() etc...
